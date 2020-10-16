@@ -80,6 +80,7 @@ class ReportingManager: ReportingManagerProtocol {
 
     private func sendIWasExposed(token: String, date: Date, isFakeRequest fake: Bool, covidCode: String, completion: @escaping (ReportingProblem?) -> Void) {
         DP3TTracing.iWasExposed(onset: date,
+                                international: true,
                                 authentication: .HTTPAuthorizationHeader(header: "Authorization", value: "Bearer \(token)"),
                                 isFakeRequest: fake) { [weak self] result in
             DispatchQueue.main.async { [weak self] in

@@ -80,6 +80,8 @@ class TracingManager: NSObject {
                                urlSession: URLSession.certificatePinned,
                                backgroundHandler: self)
 
+        DP3TTracing.setIncludeAllInternationalKeys(true)
+
         // Do not sync because applicationState is still .background
         updateStatus(shouldSync: false) { _ in
             self.uiStateManager.refresh()

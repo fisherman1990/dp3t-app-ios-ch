@@ -32,8 +32,8 @@
         "package": "DP3TSDK",
         "repositoryURL": "https://github.com/DP-3T/dp3t-sdk-ios.git",
         "state": {
-          "branch": "feature/en-2",
-          "revision": "940658ef68755fa0b233c8cbae5856a8a281cda6",
+          "branch": "feature/en-2-travel",
+          "revision": "cf461f092a4394fa7ee8af436e361a505830b31a",
           "version": null
         }
       },
